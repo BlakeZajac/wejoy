@@ -27,9 +27,9 @@ if ( have_rows ( 'layout' ) ): ?>
                             <div class="copy hero__content">
 
                                 <?php if ( !empty( $hero_heading ) ): ?>
-                                    <h2 class="hero__title">
+                                    <h1 class="hero__title">
                                         <?php echo $hero_heading; ?>
-                                    </h2>
+                                    </h1>
                                 <?php endif; ?>
 
                                 <?php if ( !empty( $hero_body ) ): ?>
@@ -39,11 +39,11 @@ if ( have_rows ( 'layout' ) ): ?>
                                 <?php endif; ?>
 
                                 <?php if ( !empty( $hero_button_text ) ): ?>
-                                    <button type="button" class="btn btn--black">
-                                        <a href="<?php echo $hero_button_url; ?>">
+                                    <a href="<?php echo $hero_button_url; ?>">
+                                        <button type="button" clas="btn btn--black">
                                             <?php echo $hero_button_text; ?>
-                                        </a>
-                                    </button>
+                                        </button>
+                                    </a>
                                 <?php endif; ?>
 
                             </div>

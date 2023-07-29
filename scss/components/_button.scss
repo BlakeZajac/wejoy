@@ -1,0 +1,28 @@
+button,
+.btn {
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: rem(1px);
+  background-color: $color-white;
+  border-radius: rem(16px);
+  padding: 1.25rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: transform 0.3s cubic-bezier(0.5, 2.5, 0.725, 0.709),
+    box-shadow 75ms linear;
+  box-shadow: rem(6px) rem(6px) $color-black;
+  color: $color-black;
+  letter-spacing: -0.03em;
+
+  a {
+    color: $color-black;
+    border: none;
+  }
+
+  &:hover {
+    transform: translate3d(rem(7px), rem(6px), 0);
+    box-shadow: 0 0 $color-black;
+    transition: transform 0.3s cubic-bezier(0.5, 2.5, 0.725, 0.709),
+      box-shadow 75ms linear;
+  }
+}
