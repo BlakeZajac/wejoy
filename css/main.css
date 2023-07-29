@@ -1,0 +1,88 @@
+.copy h1, .copy .h1 {
+  font-size: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .copy h1, .copy .h1 {
+    font-size: 4.25rem;
+  }
+}
+.copy h2, .copy .h2 {
+  font-size: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .copy h2, .copy .h2 {
+    font-size: 3.25rem;
+  }
+}
+.copy h3, .copy .h3 {
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .copy h3, .copy .h3 {
+    font-size: 2rem;
+  }
+}
+.copy h4, .copy .h4 {
+  font-size: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .copy h4, .copy .h4 {
+    font-size: 1.75rem;
+  }
+}
+.copy h5, .copy .h5 {
+  font-size: 1.125rem;
+}
+@media screen and (min-width: 768px) {
+  .copy h5, .copy .h5 {
+    font-size: 1.5rem;
+  }
+}
+.copy h6, .copy .h6 {
+  font-size: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .copy h6, .copy .h6 {
+    font-size: 1.25rem;
+  }
+}
+.copy p:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+.copy p, .copy ol, .copy ul, .copy body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.copy .body-lg {
+  font-size: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .copy .body-lg {
+    font-size: 1.5rem;
+  }
+}
+.copy .body-md {
+  font-size: 1.125rem;
+}
+@media screen and (min-width: 768px) {
+  .copy .body-md {
+    font-size: 1.375rem;
+  }
+}
+.copy .body-sm {
+  font-size: 0.875rem;
+}
+.copy .body-xs {
+  font-size: 0.75rem;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+/*# sourceMappingURL=data:application/json,%7B%22version%22%3A3%2C%22sourceRoot%22%3A%22http%3A%2F%2Fwejoy.local%2F%22%2C%22sources%22%3A%5B%22C%3A%2FUsers%2Fconta%2FLocal%20Sites%2Fwejoy%2Fapp%2Fpublic%2Fwp-content%2Fthemes%2Fwejoy%2Fscss%2Fbase%2F_copy.scss%22%2C%22C%3A%2FUsers%2Fconta%2FLocal%20Sites%2Fwejoy%2Fapp%2Fpublic%2Fwp-content%2Fthemes%2Fwejoy%2Fscss%2Fbase%2F_helpers.scss%22%5D%2C%22names%22%3A%5B%5D%2C%22mappings%22%3A%22AACE%3BAAAA%3BAAAA%3BAAIE%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAKF%3BAAAA%3BAAAA%3BAAIE%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAKF%3BAAAA%3BAAAA%3BAAIE%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAKF%3BAAAA%3BAAAA%3BAAIE%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAKF%3BAAAA%3BAAAA%3BAAIE%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAKF%3BAAAA%3BAAAA%3BAAIE%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAMA%3BAAAA%3BAAAA%3BAAKF%3BAAAA%3BAAAA%3BAAAA%3BAAQA%3BAAAA%3BAAAA%3BAAGE%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAKF%3BAAAA%3BAAAA%3BAAGE%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAKF%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BACzFF%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAQA%3BAAAA%3BAAAA%22%7D */

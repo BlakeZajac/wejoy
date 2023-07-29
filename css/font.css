@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Satoshi";
+  src: url("../font/Satoshi.ttf");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-Italic";
+  src: url("../font/Satoshi-Italic.ttf");
+  font-weight: 100 900;
+}
