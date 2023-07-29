@@ -1,0 +1,33 @@
+.sticker {
+  z-index: 1;
+  width: 12rem;
+  height: 12rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  display: flex;
+}
+
+.sticker__image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.sticker__text {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  bottom: 10%;
+  right: 10%;
+}
+
+.sticker__icon {
+  height: 2.5rem;
+  bottom: 2%;
+  right: 2%;
+}

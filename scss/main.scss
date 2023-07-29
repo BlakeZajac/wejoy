@@ -2,7 +2,7 @@
 
 // 1. Configuration and helpers
 @import "abstracts/variables", "abstracts/placeholders", "abstracts/functions",
-  "abstracts/mixins";
+  "abstracts/mixins", "abstracts/animations";
 
 // 2. Vendors
 
@@ -14,6 +14,6 @@
 
 // 5. Components
 @import "components/layout-section", "components/layout-row", "components/hero",
-  "components/button";
+  "components/button", "components/image-shape", "components/sticker";
 
 // 6. Pages

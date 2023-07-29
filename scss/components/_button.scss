@@ -10,7 +10,7 @@ button,
   font-weight: 700;
   transition: transform 0.3s cubic-bezier(0.5, 2.5, 0.725, 0.709),
     box-shadow 75ms linear;
-  box-shadow: rem(6px) rem(6px) $color-black;
+  box-shadow: $shadow-default;
   color: $color-black;
   letter-spacing: -0.03em;
 

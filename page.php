@@ -33,7 +33,7 @@ if ( have_rows ( 'layout' ) ): ?>
                                 <?php endif; ?>
 
                                 <?php if ( !empty( $hero_body ) ): ?>
-                                    <p class="hero__body">
+                                    <p class="hero__body body-md">
                                         <?php echo $hero_body; ?>
                                     </p>
                                 <?php endif; ?>
