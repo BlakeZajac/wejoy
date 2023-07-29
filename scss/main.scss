@@ -10,9 +10,10 @@
 @import "base/base", "base/copy", "base/helpers";
 
 // 4. Layout-related sections
-@import "layout/site-container", "layout/site-header", "layout/site-footer";
+@import "layout/site-header", "layout/site-footer";
 
 // 5. Components
-@import "components/button";
+@import "components/layout-section", "components/layout-row",
+  "components/button";
 
 // 6. Pages
