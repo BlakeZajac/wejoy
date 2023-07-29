@@ -15,6 +15,10 @@ if ( have_rows ( 'layout' ) ): ?>
                 $hero_button_url    =   get_sub_field('hero_button_url');
                 $hero_image_one     =   get_sub_field('column_image_one');
                 $hero_image_two     =   get_sub_field('column_image_two');
+                
+                $hero_sticker_image =   get_theme_file_uri('img/sticker-01.png');
+                $hero_sticker_text  =   get_theme_file_uri('img/text-design-agency-circular.svg');
+                $hero_sticker_icon  =   get_theme_file_uri('img/icon-star.svg');
                 ?>
                 
                 <div class="l-section hero">
@@ -45,7 +49,52 @@ if ( have_rows ( 'layout' ) ): ?>
                             </div>
                         </div>
 
-                        <div class="l-col hero__col hero__col--image"></div>                
+                        <div class="l-col hero__col hero__col--image">
+                            <?php
+                            $hero_image_one_alttext = get_post_meta( $hero_image_one, '_wp_attachment_image_alt', true );
+                            $hero_image_two_alttext = get_post_meta( $hero_image_two, '_wp_attachment_image_alt', true );
+                            ?>
+
+                            <?php if ( !empty( $hero_image_one ) ): ?>
+                                <div class="image-shape image-shape--1">
+                                    <img
+                                        src="<?php echo $hero_image_one['url']; ?>"
+                                        alt="<?php echo $hero_image_one_alttext; ?>"
+                                        class="image-shape__image"
+                                    />
+                                </div>
+                            <?php endif; ?>
+
+                            <div class="sticker hero__sticker">
+                                <img
+                                    src="<?php echo esc_url( $hero_sticker_image ); ?>"
+                                    alt=""
+                                    class="sticker__image"
+                                />
+                               
+                               <img
+                                    src="<?php echo esc_url( $hero_sticker_text ); ?>"
+                                    alt=""
+                                    class="sticker__text anim-rotate"
+                                />
+
+                                <img
+                                    src="<?php echo esc_url( $hero_sticker_icon ); ?>"
+                                    alt=""
+                                    class="sticker__icon"
+                                />
+                            </div>
+
+                            <?php if ( !empty( $hero_image_two ) ): ?>
+                                <div class="image-shape image-shape--2">
+                                    <img
+                                        src="<?php echo $hero_image_two['url']; ?>"
+                                        alt="<?php echo $hero_image_two_alttext; ?>"
+                                        class="image-shape__image"
+                                    />
+                                </div>
+                            <?php endif; ?>
+                        </div>                
                     </div>
                 </div>
 
