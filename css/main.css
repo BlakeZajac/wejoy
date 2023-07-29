@@ -1,5 +1,9 @@
 .copy h1, .copy .h1 {
+  padding-bottom: 1rem;
+  font-family: "Satoshi";
   font-size: 3rem;
+  color: #232227;
+  color: #232227;
 }
 @media screen and (min-width: 768px) {
   .copy h1, .copy .h1 {
@@ -7,7 +11,10 @@
   }
 }
 .copy h2, .copy .h2 {
+  padding-bottom: 1rem;
+  font-family: "Satoshi";
   font-size: 2.5rem;
+  color: #232227;
 }
 @media screen and (min-width: 768px) {
   .copy h2, .copy .h2 {
@@ -15,7 +22,11 @@
   }
 }
 .copy h3, .copy .h3 {
+  padding-bottom: 1rem;
+  padding-bottom: 1rem;
+  font-family: "Satoshi";
   font-size: 1.5rem;
+  color: #232227;
 }
 @media screen and (min-width: 768px) {
   .copy h3, .copy .h3 {
@@ -23,7 +34,10 @@
   }
 }
 .copy h4, .copy .h4 {
+  padding-bottom: 1rem;
+  font-family: "Satoshi";
   font-size: 1.25rem;
+  color: #232227;
 }
 @media screen and (min-width: 768px) {
   .copy h4, .copy .h4 {
@@ -31,7 +45,10 @@
   }
 }
 .copy h5, .copy .h5 {
+  padding-bottom: 1rem;
+  font-family: "Satoshi";
   font-size: 1.125rem;
+  color: #232227;
 }
 @media screen and (min-width: 768px) {
   .copy h5, .copy .h5 {
@@ -39,7 +56,10 @@
   }
 }
 .copy h6, .copy .h6 {
+  padding-bottom: 1rem;
+  font-family: "Satoshi";
   font-size: 1rem;
+  color: #232227;
 }
 @media screen and (min-width: 768px) {
   .copy h6, .copy .h6 {
@@ -50,8 +70,10 @@
   margin-bottom: 0.75rem;
 }
 .copy p, .copy ol, .copy ul, .copy body {
+  font-family: "Satoshi";
   font-size: 1rem;
   line-height: 1.5;
+  color: #6c7892;
 }
 .copy .body-lg {
   font-size: 1.25rem;
@@ -85,4 +107,4 @@
 body {
   overflow-x: hidden;
 }
-/*# sourceMappingURL=data:application/json,%7B%22version%22%3A3%2C%22sourceRoot%22%3A%22http%3A%2F%2Fwejoy.local%2F%22%2C%22sources%22%3A%5B%22C%3A%2FUsers%2Fconta%2FLocal%20Sites%2Fwejoy%2Fapp%2Fpublic%2Fwp-content%2Fthemes%2Fwejoy%2Fscss%2Fbase%2F_copy.scss%22%2C%22C%3A%2FUsers%2Fconta%2FLocal%20Sites%2Fwejoy%2Fapp%2Fpublic%2Fwp-content%2Fthemes%2Fwejoy%2Fscss%2Fbase%2F_helpers.scss%22%5D%2C%22names%22%3A%5B%5D%2C%22mappings%22%3A%22AACE%3BAAAA%3BAAAA%3BAAIE%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAKF%3BAAAA%3BAAAA%3BAAIE%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAKF%3BAAAA%3BAAAA%3BAAIE%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAKF%3BAAAA%3BAAAA%3BAAIE%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAKF%3BAAAA%3BAAAA%3BAAIE%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAKF%3BAAAA%3BAAAA%3BAAIE%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAMA%3BAAAA%3BAAAA%3BAAKF%3BAAAA%3BAAAA%3BAAAA%3BAAQA%3BAAAA%3BAAAA%3BAAGE%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAKF%3BAAAA%3BAAAA%3BAAGE%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAKF%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BACzFF%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAQA%3BAAAA%3BAAAA%22%7D */
+/*# sourceMappingURL=data:application/json,%7B%22version%22%3A3%2C%22sourceRoot%22%3A%22http%3A%2F%2Fwejoy.local%2F%22%2C%22sources%22%3A%5B%22C%3A%2FUsers%2Fconta%2FLocal%20Sites%2Fwejoy%2Fapp%2Fpublic%2Fwp-content%2Fthemes%2Fwejoy%2Fscss%2Fbase%2F_copy.scss%22%2C%22C%3A%2FUsers%2Fconta%2FLocal%20Sites%2Fwejoy%2Fapp%2Fpublic%2Fwp-content%2Fthemes%2Fwejoy%2Fscss%2Fbase%2F_helpers.scss%22%5D%2C%22names%22%3A%5B%5D%2C%22mappings%22%3A%22AACE%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAQE%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAKF%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAOE%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAKF%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAQE%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAKF%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAOE%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAKF%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAOE%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAKF%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAOE%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAMA%3BAAAA%3BAAAA%3BAAKF%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAUA%3BAAAA%3BAAAA%3BAAGE%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAKF%3BAAAA%3BAAAA%3BAAGE%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAKF%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAC%2FGF%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAQA%3BAAAA%3BAAAA%22%7D */
