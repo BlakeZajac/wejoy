@@ -1,11 +1,16 @@
 .sticker {
   z-index: 1;
-  width: 12rem;
-  height: 12rem;
+  width: 8rem;
+  height: 8rem;
   align-items: center;
   justify-content: center;
   padding: 1.5rem;
   display: flex;
+
+  @media screen and (min-width: $bp-mobile-up) {
+    width: 12rem;
+    height: 12rem;
+  }
 }
 
 .sticker__image {
@@ -20,14 +25,27 @@
 
 .sticker__text {
   position: absolute;
-  width: 10rem;
-  height: 10rem;
-  bottom: 10%;
-  right: 10%;
+  width: 6.5rem;
+  height: 6.5rem;
+  bottom: 11%;
+  right: 11%;
+
+  @media screen and (min-width: $bp-mobile-up) {
+    width: 10rem;
+    height: 10rem;
+    bottom: 10%;
+    right: 10%;
+  }
 }
 
 .sticker__icon {
-  height: 2.5rem;
-  bottom: 2%;
-  right: 2%;
+  height: 2.25rem;
+  bottom: 3%;
+  right: 3%;
+
+  @media screen and (min-width: $bp-mobile-up) {
+    height: 2.5rem;
+    bottom: 2%;
+    right: 2%;
+  }
 }
