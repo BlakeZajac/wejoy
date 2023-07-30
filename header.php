@@ -52,5 +52,17 @@
             </div>
         </div>
 
-        <div class="site-header--vertical"></div>
+        <div class="site-header--vertical">
+            <div class="js-hamburger-menu hamburger-menu">
+                <div class="hamburger-menu__line hamburger-menu__line--1"></div>
+                <div class="hamburger-menu__line hamburger-menu__line--2"></div>
+                <div class="hamburger-menu__line hamburger-menu__line--3"></div>
+            </div>     
+            
+            <div class="js-hamburger-menu__submenu hamburger-menu__submenu">
+                <?php echo $primary_menu; ?>
+            </div>
+
+            
+        </div>
     </header>
