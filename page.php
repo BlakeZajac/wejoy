@@ -100,6 +100,43 @@ if ( have_rows ( 'layout' ) ): ?>
 
             <?php endif;
             // End hero section
+
+            // Logo slider section
+            if ( get_row_layout() == 'logo_slider' ):
+                $logo_slider_text = get_sub_field( 'logo_slider_text' );
+                ?>
+
+                <div class="l-section logo-slider">
+                    <div class="l-row logo-slider__row">
+                        <?php if ( !empty( $logo_slider_text ) ): ?>
+                            <div class="l-col logo-slider__col logo-slider__col--content">
+                                <p class="logo-slider__content">
+                                    <?php echo $logo_slider_text; ?>
+                                </p>
+                            </div>
+                        <?php endif; ?>
+
+                        <?php if ( have_rows( 'logo_slider_logos' ) ): ?>
+                            <div class="l-col logo-slider__col logo-slider__col--image">
+                                <div class="logo-slider__items">
+                                    <?php while ( have_rows ( 'logo_slider_logos' ) ):
+                                        the_row();
+                                        
+                                        $logo_slider_logo = get_sub_field( 'logo_slider_logo' );
+                                        ?>
+
+                                        <div class="logo-slider__item">
+                                            <img src="<?php echo esc_url( $logo_slider_logo['url'] ); ?>" alt="" class="logo-slider__item__logo" />
+                                        </div>
+                                    <?php endwhile; ?>
+                                </div>
+                            </div>
+                        <?php endif; ?>
+                    </div>
+                </div>
+
+            <?php endif;
+            // End logo slider section
             ?>
         <?php endwhile; ?>
     </div>
