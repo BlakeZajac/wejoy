@@ -67,7 +67,7 @@
             </div>
 
             <div class="site-header--vertical__items">
-                <div class="js-scroll-progress" />
+                <div class="js-scroll-progress"></div>
 
                 <div class="site-header--vertical__social">
                     <a href="#">
