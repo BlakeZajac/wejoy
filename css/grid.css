@@ -1,7 +1,6 @@
 /* SASS compiles grid area as mathemetical hence this becoming a css file */
 .hero__col--image {
   display: grid;
-  width: 100%;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   margin: 0 auto;

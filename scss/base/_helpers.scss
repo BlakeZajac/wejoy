@@ -7,5 +7,19 @@
 }
 
 body {
+  font-family: $font-normal;
   overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: $color-black;
+}
+
+.l-content-wrapper {
+  @media screen and (min-width: $bp-desktop) {
+    width: calc(100% - 80px);
+    padding-top: 74px;
+    margin-left: 80px;
+  }
 }
