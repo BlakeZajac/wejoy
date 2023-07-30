@@ -4,6 +4,8 @@
 // Customizer
 
 // Enqueue
+require_once( THEMEPATH . 'inc/enqueue/enqueue_css.php' );
+require_once( THEMEPATH . 'inc/enqueue/enqueue_js.php' );
 
 // Function
 require_once( THEMEPATH . 'inc/function/disable_comments.php' );

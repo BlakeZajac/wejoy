@@ -8,6 +8,18 @@
   }
 }
 
+@keyframes item-reveal {
+  from {
+    top: rem(20px);
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
 .anim-rotate {
   animation: rotate 15s linear infinite forwards;
 }

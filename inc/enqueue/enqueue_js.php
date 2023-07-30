@@ -17,6 +17,7 @@ function my_theme_enqueue_scripts()
     );
     wp_enqueue_script('custom', get_stylesheet_directory_uri() . '/js/custom.js', true);
     wp_enqueue_script('slick', get_stylesheet_directory_uri() . '/js/slick.js', array('custom'), true);
+    wp_enqueue_script('header', get_stylesheet_directory_uri() . '/js/header.js', array('custom'), true);
     wp_enqueue_script('lenis-scroll', 'https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js');
 }
 add_action('wp_footer', 'my_theme_enqueue_scripts');
