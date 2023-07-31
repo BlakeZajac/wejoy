@@ -20,6 +20,16 @@
   }
 }
 
+@keyframes marquee-horizontal {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
 .anim-rotate {
   animation: rotate 15s linear infinite forwards;
 }

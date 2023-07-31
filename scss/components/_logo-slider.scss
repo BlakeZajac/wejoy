@@ -1,0 +1,33 @@
+.logo-slider {
+}
+
+.logo-slider__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo-slider__col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--content {
+    flex: 1 1 25%;
+    border-right: 1px solid $color-black;
+  }
+
+  &--image {
+    flex: 1 1 75%;
+  }
+}
+
+.logo-slider__marquee {
+  height: 5rem;
+}
+
+.logo-slider__item {
+}
+
+.logo-slider__item__logo {
+  height: 4rem;
+}

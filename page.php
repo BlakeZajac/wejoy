@@ -116,19 +116,33 @@ if ( have_rows ( 'layout' ) ): ?>
                             </div>
                         <?php endif; ?>
 
+                        
+
                         <?php if ( have_rows( 'logo_slider_logos' ) ): ?>
                             <div class="l-col logo-slider__col logo-slider__col--image">
-                                <div class="logo-slider__items">
-                                    <?php while ( have_rows ( 'logo_slider_logos' ) ):
-                                        the_row();
-                                        
-                                        $logo_slider_logo = get_sub_field( 'logo_slider_logo' );
-                                        ?>
+                                <div class="logo-slider__marquee marquee">
+                                    <div class="logo-slider__items marquee__items">
+                                        <?php while ( have_rows ( 'logo_slider_logos' ) ):
+                                            the_row();
+                                            
+                                            $logo_slider_logo = get_sub_field( 'logo_slider_logo' );
+                                            ?>
 
-                                        <div class="logo-slider__item">
-                                            <img src="<?php echo esc_url( $logo_slider_logo['url'] ); ?>" alt="" class="logo-slider__item__logo" />
-                                        </div>
-                                    <?php endwhile; ?>
+                                            <div class="logo-slider__item marquee__item">
+                                                <img src="<?php echo esc_url( $logo_slider_logo['url'] ); ?>" alt="" class="logo-slider__item__logo marquee__item__logo" />
+                                            </div>
+                                        <?php endwhile; ?>
+
+                                        <?php while ( have_rows ( 'logo_slider_logos' ) ):
+                                            the_row();
+                                            ?>
+
+                                            <div class="logo-slider__item marquee__item">
+                                                <img src="<?php echo esc_url ( $logo_slider_logo['url'] ); ?>" alt="" class="logo-slider__item__logo marquee__item__logo">
+                                            </div>
+
+                                        <?php endwhile; ?>
+                                    </div>
                                 </div>
                             </div>
                         <?php endif; ?>

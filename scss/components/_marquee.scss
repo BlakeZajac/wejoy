@@ -1,0 +1,21 @@
+.marquee {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.marquee__items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee-horizontal 10s linear infinite;
+}
+
+.marquee__item {
+  margin-right: 8rem;
+}
