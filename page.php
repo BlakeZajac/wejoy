@@ -137,6 +137,22 @@ if ( have_rows ( 'layout' ) ): ?>
 
             <?php endif;
             // End logo slider section
+
+            // Text marquee section
+            if ( get_row_layout() == 'text_marquee' ):
+                $text_marquee_text_one = get_sub_field('text_marquee_text_one');
+                $text_marquee_text_two = get_sub_field('text_marquee_text_two');
+                ?>
+
+                <div class="l-section marquee">
+                    <div class="l-container marquee__row">
+                        <?php echo $text_marquee_text_one; ?>
+                        <?php echo $text_marquee_text_two; ?>
+                    </div>
+                </div>
+            
+            <?php endif;
+            // End text marquee section
             ?>
         <?php endwhile; ?>
     </div>
