@@ -1,5 +1,6 @@
 <?php
 // CPT
+require_once ( THEMEPATH . 'inc/cpt/services.php' );
 
 // Customizer
 

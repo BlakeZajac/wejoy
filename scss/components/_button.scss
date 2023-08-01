@@ -1,10 +1,13 @@
 button,
 .btn {
+  font-family: $font-normal;
   width: 100%;
   cursor: pointer;
   text-align: center;
   letter-spacing: rem(1px);
   background-color: $color-white;
+  border: none;
+  outline: none;
   border-radius: rem(16px);
   padding: 1.25rem 2.5rem;
   font-size: 1rem;
