@@ -19,9 +19,9 @@ if ($query->have_posts()) : ?>
                     <?php while ($query->have_posts()) :
                         $query->the_post();
 
-                        $service_background_color = get_field('home_page_column_color');
-                        $service_icon = get_field('service_icon');
-                        $service_description = get_field('service_description');
+                        $service_background_color   =   get_field('home_page_column_color');
+                        $service_icon               =   get_field('service_icon');
+                        $service_description        =   get_field('service_description');
                     ?>
 
                         <div class="card__item card__item--<?php echo $service_background_color; ?>">

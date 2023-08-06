@@ -114,9 +114,7 @@ if ( have_rows ( 'layout' ) ): ?>
                                     <?php echo $logo_slider_text; ?>
                                 </p>
                             </div>
-                        <?php endif; ?>
-
-                        
+                        <?php endif; ?>                        
 
                         <?php if ( have_rows( 'logo_slider_logos' ) ): ?>
                             <div class="l-col logo-slider__col logo-slider__col--image">
@@ -148,7 +146,6 @@ if ( have_rows ( 'layout' ) ): ?>
                         <?php endif; ?>
                     </div>
                 </div>
-
             <?php endif;
             // End logo slider section
 
@@ -167,6 +164,67 @@ if ( have_rows ( 'layout' ) ): ?>
             
             <?php endif;
             // End text marquee section
+
+            // Services section
+            if ( get_row_layout() == 'services' ):
+                $services_to_display = get_sub_field('services_to_display');
+
+                if ($services_to_display): ?>
+                    <div class="l-section card home-card">
+                        <div class="l-container card__row">
+                            <div class="card__items">
+                                <?php foreach ( $services_to_display as $post ):
+                                    setup_postdata( $post );
+
+                                    $service_background_color   =   get_field('home_page_column_color');
+                                    $service_icon               =   get_field('service_icon');
+                                    $service_description        =   get_field('service_description');
+                                    ?>
+
+                                    <div class="card__item card__item--<?php echo $service_background_color; ?>">
+                                        <div class="card__item__head">
+                                            <?php if ( !empty ( $service_icon ) ) : ?>
+                                                <div class="card__item__icon-wrapper">
+                                                    <img
+                                                        src="<?php echo $service_icon['url']; ?>"
+                                                        alt="Service Icon"
+                                                        class="card__item__icon"
+                                                    />
+                                                </div>
+                                            <?php endif; ?>
+                                        </div>
+
+                                        <div class="card__item__body">
+                                            <div class="card__item__content copy">
+                                                <h3 class="card__item__title">
+                                                    <?php the_title(); ?>
+                                                </h3>
+
+                                                <?php if ( !empty ( $service_description ) ) : ?>
+                                                    <p class="card__item__excerpt">
+                                                        <?php echo $service_description; ?>
+                                                    </p>
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
+
+                                        <div class="card__item__footer">
+                                            <a href="<?php the_permalink(); ?>">
+                                                <button type="button" class="btn btn--black">
+                                                    Learn more
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                <?php endforeach; ?>
+                            </div>
+                            <?php wp_reset_postdata(); ?>
+                        </div>
+                    </div>
+                <?php endif; ?>
+
+            <?php endif;
+            // End services section
             ?>
         <?php endwhile; ?>
     </div>
