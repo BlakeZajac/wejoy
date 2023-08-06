@@ -1,49 +1,52 @@
 .card {
-}
-
-.card__row {
-}
-
-.card__items {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.card__item {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 100%;
-
-  @media screen and (min-width: $bp-desktop) {
-    flex: 1 1 50%;
+  .card__row {
   }
 
-  &--purple {
-    background-color: $color-purple;
+  .card__items {
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  &--red {
-    background-color: $color-red;
+  .card__item {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex: 1 1 50%;
+    }
+
+    &--purple {
+      background-color: $color-purple;
+    }
+
+    &--red {
+      background-color: $color-red;
+    }
+
+    &--cream {
+      background-color: $color-cream;
+    }
+
+    &--green {
+      background-color: $color-green;
+    }
   }
 
-  &--cream {
-    background-color: $color-cream;
+  .card__item__head {
   }
 
-  &--green {
-    background-color: $color-green;
+  .card__item__body {
+    flex-grow: 1;
+  }
+
+  .card__item__footer {
+    button {
+      width: 100%;
+    }
   }
 }
 
-.card__item__head {
-}
-
-.card__item__body {
-  flex-grow: 1;
-}
-
-.card__item__footer {
-  button {
-    width: 100%;
-  }
+.home-card {
+  display: none;
 }

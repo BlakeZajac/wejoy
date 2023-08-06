@@ -225,6 +225,71 @@ if ( have_rows ( 'layout' ) ): ?>
 
             <?php endif;
             // End services section
+
+            // Media with text section
+            if ( get_row_layout() == 'media_with_text' ):
+                $media_with_text_background_color   =   get_sub_field('background_color');
+                $media_with_text_image_position     =   get_sub_field('image_position');
+                $media_with_text_image              =   get_sub_field('image');
+                $media_with_text_image_graphic      =   get_sub_field('image_graphic');
+                $media_with_text_heading            =   get_sub_field('heading_text');
+                $media_with_text_body               =   get_sub_field('body_text');
+                $media_with_text_button             =   get_sub_field('button');
+                $media_with_text_button_link        =   $media_with_text_button['url'];
+                $media_with_text_button_text        =   $media_with_text_button['title'];
+
+                $media_with_text_image_alt          =   get_post_meta( $media_with_text_image, '_wp_attachment_image_alt', true );
+            ?>
+
+                <div class="l-section media-with-text media-with-text--image-<?php echo $media_with_text_image_position; ?>">
+                    <div class="l-container media-with-text__row">
+                        <div class="l-col media-with-text__col media-with-text__col--image bg-<?php echo $media_with_text_background_color; ?>">
+
+                            <div class="image-shape">
+                                <img
+                                    src="<?php echo $media_with_text_image['url']; ?>"
+                                    alt="<?php echo $media_with_text_image_alt; ?>"
+                                    class="image-shape__image media-with-text__image"
+                                />
+
+                                <img
+                                    src="<?php echo $media_with_text_image_graphic['url']; ?>"
+                                    alt="Graphic"
+                                    class="image-shape__image__xgraphic"
+                                />
+                            </div>
+
+                        </div>
+
+                        <div class="l-col media-with-text__col media-with-text__col--content">
+                            <?php if ( !empty ( $media_with_text_heading ) || !empty ( $media_with_text_body ) ) : ?>
+                                <div class="media-with-text__content copy">
+                                    <?php if ( !empty ( $media_with_text_heading ) ) : ?>
+                                        <h2 class="media-with-text__heading">
+                                            <?php echo $media_with_text_heading; ?>
+                                        </h2>
+                                    <?php endif; ?>
+                                </div>
+                            <?php endif; ?>
+
+                            <?php if ( !empty ( $media_with_text_body ) ) : ?>
+                                <p class="media-with-text__body">
+                                    <?php echo $media_with_text_body; ?>
+                                </p>
+                            <?php endif; ?>
+
+                            <?php if ( !empty ( $media_with_text_button_text ) ) : ?>
+                                <button type="button" class="btn btn--black">
+                                    <?php echo $media_with_text_button_text; ?>
+                                </button>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                </div>
+
+            <?php endif;
+            // End media with text section
+
             ?>
         <?php endwhile; ?>
     </div>
